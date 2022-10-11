@@ -26,7 +26,7 @@ class Node:
             raise TypeError("data must be an integer")
         self.__data = value
 
-    @property
+@property
     def next_node(self):
         """Get/set the next_node of the Node."""
         return (self.__next_node)
@@ -37,7 +37,6 @@ class Node:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
-
 class SinglyLinkedList:
     """Represent a singly-linked list."""
 
@@ -45,8 +44,7 @@ class SinglyLinkedList:
         """Initalize a new SinglyLinkedList."""
         self.__head = None
 
-
-    def sorted_insert(self, value):
+def sorted_insert(self, value):
         """Insert a new Node to the SinglyLinkedList.
         The node is inserted into the list at the correct
         ordered numerical position.
@@ -68,7 +66,7 @@ class SinglyLinkedList:
             new.next_node = tmp.next_node
             tmp.next_node = new
 
-    def __str__(self):
+            def __str__(self):
         """Define the print() representation of a SinglyLinkedList."""
         values = []
         tmp = self.__head
